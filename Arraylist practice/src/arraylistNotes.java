@@ -4,18 +4,21 @@ public class arraylistNotes {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		ArrayList<String> band = new ArrayList<String>();
-
-	    band.add("Lindsey");
-	  	band.add("Mick");
-		band.add("Stevie");
-		band.add("Peter");
-		band.remove(3);
-		band.add(2, "Christine");
-
-		System.out.println(band);
+		ArrayList<Integer> nums = new ArrayList<Integer>();
+		ArrayList<String> band = new ArrayList<String>(); 
+		nums.add(2);
+		nums.add(3);
+		nums.add(5);
+		nums.add(7);
+		nums.add(11);
+		nums.add(13);
+		nums.add(17);
+		nums.add(19);
+		nums.add(0,nums.remove(nums.size()-1)) ; 
 	
-	
+		System.out.println (nums); 
 
+
+		
 }
 }
