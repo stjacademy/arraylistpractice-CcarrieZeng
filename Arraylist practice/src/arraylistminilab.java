@@ -6,9 +6,11 @@ public class arraylistminilab {
 		
 		ArrayList<Integer>testing=new ArrayList<Integer>();
 		testing.add(2);
-		testing.add(6);
+		testing.add(100);
 		testing.add(8);
 		testing.add(50);
+		testing.add(80);
+
 		System.out.println(getListOfFactors(762));
 		keepOnlyCompositeNumbers(testing);
 
@@ -30,9 +32,9 @@ public class arraylistminilab {
 	  public static void keepOnlyCompositeNumbers( ArrayList<Integer> nums )
 	  {
 		  ArrayList<Integer>composite=new ArrayList<Integer>();
-		  for(int i=0;i<composite.size();i++) {
-			  int num=composite.get(i);
-			  if(getListOfFactors(num).size()>2) {
+		  for(int i=0;i<nums.size();i++) {
+			  int num=nums.get(i);
+			  if(getListOfFactors(num).size()>0) {
 				  composite.add(num); 
 			  }
 				 
